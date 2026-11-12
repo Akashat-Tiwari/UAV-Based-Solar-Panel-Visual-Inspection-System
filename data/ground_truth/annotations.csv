@@ -1,0 +1,5 @@
+image_name,panel_id,defect_type,severity,bbox_x,bbox_y,bbox_w,bbox_h
+panel_01.jpg,PV-R01-M02,HOTSPOT,CRITICAL,467,160,76,76
+panel_01.jpg,PV-R02-M03,BYPASS_DIODE_FAILURE,CRITICAL,732,358,82,243
+panel_02.jpg,PV-R02-M01,SURFACE_CRACK,WARNING,161,430,124,122
+panel_02.jpg,PV-R03-M02,SOILING_DUST,ADVISORY,446,712,119,97
