@@ -1,0 +1,8 @@
+defect_id,image_name,panel_id,defect_type,defect_name,severity,confidence,delta_t_celsius,est_power_loss_pct,bbox_x,bbox_y,bbox_w,bbox_h,timestamp
+DEF-HS_PV-R01-M04,panel_01.jpg,PV-R01-M04,HOTSPOT,Localized Hotspot,CRITICAL,0.98,16.8,18.5,465,159,78,80,2026-11-11 13:33:37
+DEF-DIODE_PV-R01-M04,panel_01.jpg,PV-R01-M04,BYPASS_DIODE_FAILURE,Bypass Diode Failure / Sub-string Defect,CRITICAL,0.94,5.0,33.3,469,105,71,211,2026-11-11 13:33:37
+DEF-HS_PV-R01-M10,panel_01.jpg,PV-R01-M10,HOTSPOT,Localized Hotspot,WARNING,0.96,6.3,18.5,1106,285,44,31,2026-11-11 13:33:37
+DEF-DIODE_PV-R04-M07,panel_01.jpg,PV-R04-M07,BYPASS_DIODE_FAILURE,Bypass Diode Failure / Sub-string Defect,CRITICAL,0.94,13.3,33.3,738,371,71,218,2026-11-11 13:33:37
+DEF-HS_PV-R02-M01,panel_02.jpg,PV-R02-M01,HOTSPOT,Localized Hotspot,WARNING,0.85,6.5,18.5,160,429,127,125,2026-11-11 13:33:37
+DEF-CRK_PV-R02-M01,panel_02.jpg,PV-R02-M01,SURFACE_CRACK,Micro-Crack / Fracture,WARNING,0.88,2.2,8.0,155,425,135,132,2026-11-11 13:33:37
+DEF-DIODE_PV-R03-M02,panel_02.jpg,PV-R03-M02,BYPASS_DIODE_FAILURE,Bypass Diode Failure / Sub-string Defect,CRITICAL,0.94,7.6,33.3,469,643,69,209,2026-11-11 13:33:37

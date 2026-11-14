@@ -1,32 +1,32 @@
-# Member 3: Defect Anomaly Detection & Model Evaluation
+# Member 4: Visualization & Inspection Reporting
 
 ## Assigned Module Scope
-- **Source Code**: `src/detection.py` and `src/evaluation.py`
-- **Unit Tests**: `tests/test_detection.py`
-- **Ground Truth**: `data/ground_truth/annotations.csv`
+- **Source Code**: `src/visualization.py` and `src/reporting.py`
+- **Unit Tests**: `tests/test_reporting.py`
+- **Outputs**: `outputs/reports/`
 
 ## Key Responsibilities
-1. **`AnomalyDetector` (`src/detection.py`)**:
-   - Detect thermal hotspots (localized overheating: Delta T >= 10 deg C).
-   - Detect bypass diode failures (string-level overheating).
-   - Detect optical micro-cracks, fractures, and surface soiling/dust.
-   - Output defect severity (`CRITICAL`, `WARNING`, `ADVISORY`) and estimated power loss.
+1. **`Visualizer` (`src/visualization.py`)**:
+   - Draw annotated bounding boxes, defect tags, and severity badges on UAV frames.
+   - Generate side-by-side thermal/optical comparison plots.
+   - Save annotated frames to `outputs/annotated/`.
 
-2. **`Evaluator` (`src/evaluation.py`)**:
-   - Load ground truth annotations.
-   - Calculate Bounding Box IoU (Intersection-over-Union).
-   - Compute Precision, Recall, and F1-Score metrics across test surveys.
+2. **`ReportGenerator` (`src/reporting.py`)**:
+   - Aggregate fleet metrics: Total Modules, Fleet Health Index (%), Defective Count, Power Loss (kW), Financial Loss ($).
+   - Export CSV inspection logs to `outputs/reports/inspection_results.csv`.
+   - Generate executive HTML audit reports with responsive tables and styling.
+   - Generate engineering PDF audit reports using ReportLab.
 
 ## How to Test
 Run:
 ```bash
-python -m unittest tests/test_detection.py
+python -m unittest tests/test_reporting.py
 ```
 
 ## GitHub Collaboration Workflow
 ```bash
-git checkout -b member3-detection
-git add src/detection.py src/evaluation.py tests/test_detection.py
-git commit -m "Member 3: enhance hotspot sensitivity and F1 evaluation"
-git push origin member3-detection
+git checkout -b member4-reporting
+git add src/visualization.py src/reporting.py tests/test_reporting.py
+git commit -m "Member 4: update PDF styling and executive summaries"
+git push origin member4-reporting
 ```
